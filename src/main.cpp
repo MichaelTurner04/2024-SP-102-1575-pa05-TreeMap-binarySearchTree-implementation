@@ -10,11 +10,10 @@ void get_char_frequency(MyMap<char, int> &in_tree);
 int main() {
 
   MyMap<char, int> map_obj;
-  get_letter_frequency(map_obj);
+  get_char_frequency(map_obj);
   map_obj.print();
 
   return 0;
 }
 
-void get_char_frequency(MyMap<char, int> &in_tree) {
-}
+void get_char_frequency(MyMap<char, int> &in_tree) {}

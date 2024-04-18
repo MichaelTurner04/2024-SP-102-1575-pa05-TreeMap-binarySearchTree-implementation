@@ -1,46 +1,33 @@
 
 
-
-
 template <typename K, typename V>
-void MyMap<K, V>::clear_helper(TreeNode<K, V> *&rt) {
-}
+void MyMap<K, V>::clear_helper(TreeNode<K, V> *&rt) {}
 
 template <typename K, typename V>
 void MyMap<K, V>::insert_helper(TreeNode<K, V> *&rt, const K &new_key,
-                                const V &new_value) {
-}
+                                const V &new_value) {}
 
 template <typename K, typename V>
-TreeNode<K, V> *MyMap<K, V>::get_min(TreeNode<K, V> *rt) {
-}
+TreeNode<K, V> *MyMap<K, V>::get_min(TreeNode<K, V> *rt) {}
 
 template <typename K, typename V>
-void MyMap<K, V>::erase_helper(TreeNode<K, V> *&rt, const K &erase_key) {
-}
+void MyMap<K, V>::erase_helper(TreeNode<K, V> *&rt, const K &erase_key) {}
 
 template <typename K, typename V>
-V &MyMap<K, V>::bracket_helper(TreeNode<K, V> *&rt, const K &access_key) {
-}
+V &MyMap<K, V>::bracket_helper(TreeNode<K, V> *&rt, const K &access_key) {}
 
 template <typename K, typename V>
 TreeNode<K, V> *MyMap<K, V>::find_helper(TreeNode<K, V> *rt,
-                                         const K &search_key) const {
-}
+                                         const K &search_key) const {}
 
 template <typename K, typename V>
-TreeNode<K, V> *MyMap<K, V>::clone(const TreeNode<K, V> *rt) {
-}
-
+TreeNode<K, V> *MyMap<K, V>::clone(const TreeNode<K, V> *rt) {}
 
 template <typename K, typename V>
-MyMap<K, V>::MyMap(const MyMap<K, V> &source) {
-}
+MyMap<K, V>::MyMap(const MyMap<K, V> &source) {}
 
 template <typename K, typename V>
-MyMap<K, V> &MyMap<K, V>::operator=(const MyMap<K, V> &source) {
-}
-
+MyMap<K, V> &MyMap<K, V>::operator=(const MyMap<K, V> &source) {}
 
 /// Do not touch below ///
 
@@ -102,7 +89,7 @@ void MyMap<K, V>::convert_to_sorted_list(TreeNode<K, V> *&rt,
   convert_to_sorted_list(rt->right, sorted);
 }
 
-template <typename K, typename V> 
+template <typename K, typename V>
 void MyMap<K, V>::print_helper(TreeNode<K, V> *rt, std::string indent) const {
   if (rt == nullptr) {
     cout << indent << "   [empty]" << endl;

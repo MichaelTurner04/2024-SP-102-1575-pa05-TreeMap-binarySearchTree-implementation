@@ -6,7 +6,7 @@ OBJECTS := $(SOURCES:./src/%.cpp=./build/%.o)
 FUNC_SOURCES := ${filter-out ./src/main.cpp, ${SOURCES}}
 
 CPP = g++
-CFLAGS = -Wall -Werror -Wextra -Wpedantic -pedantic-errors -g -std=c++14 
+CFLAGS = -Wall -Werror -Wextra -Wpedantic -Wno-unused-variable -Wno-return-type -Wno-unused-parameter -pedantic-errors -g -std=c++14 
 
 program.out: ${OBJECTS}
 	${CPP} ${CFLAGS} ${OBJECTS} -o build/program.out

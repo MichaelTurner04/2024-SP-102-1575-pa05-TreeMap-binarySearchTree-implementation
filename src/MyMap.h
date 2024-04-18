@@ -1,21 +1,19 @@
 #ifndef MYMAP_H
 #define MYMAP_H
 
+#include "TreeNode.h"
 #include <iostream>
 #include <stdexcept>
 #include <string>
 #include <utility>
 #include <vector>
-#include "TreeNode.h"
 
 using std::cerr;
 using std::cin;
 using std::cout;
 using std::endl;
 
-template <typename K, typename V>
-class MyMap
-{
+template <typename K, typename V> class MyMap {
 private:
   TreeNode<K, V> *root = nullptr;
 
@@ -50,8 +48,9 @@ private:
   void print_helper(TreeNode<K, V> *rt, std::string indent) const;
 
   // Helper Function for operator[], similar to at() except:
-  // If access_key is not found, create new node with that key and return ref to its value
-  // You can assume type V has default constructor available (i.e. V() is valid)
+  // If access_key is not found, create new node with that key and return ref to
+  // its value You can assume type V has default constructor available (i.e. V()
+  // is valid)
   V &bracket_helper(TreeNode<K, V> *&rt, const K &access_key);
 
   // This is a helper function for the copy constructor and operator=

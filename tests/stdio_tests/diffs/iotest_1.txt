@@ -1,105 +1,105 @@
-34 y													34 y
-1													1
-==== printing tree ====											==== printing tree ====
-       [empty]												       [empty]
-     [154]=p												     [154]=p
-           [empty]											           [empty]
-         [84]=x												         [84]=x
-           [empty]											           [empty]
-       [73]=w												       [73]=w
-         [empty]											         [empty]
-   [54]=x												   [54]=x
-       [empty]												       [empty]
-     [36]=x												     [36]=x
-           [empty]											           [empty]
-         [32]=x												         [32]=x
-           [empty]											           [empty]
-       [5]=a												       [5]=a
-         [empty]											         [empty]
-==== done printing tree ====										==== done printing tree ====
-Size is: 7												Size is: 7
-==== printing tree ====											==== printing tree ====
+34 y												   <
+1												   <
+==== printing tree ====										   <
+       [empty]											   <
+     [154]=p											   <
+           [empty]										   <
+         [84]=x											   <
+           [empty]										   <
+       [73]=w											   <
+         [empty]										   <
+   [54]=x											   <
+       [empty]											   <
+     [36]=x											   <
+           [empty]										   <
+         [32]=x											   <
+           [empty]										   <
+       [5]=a											   <
+         [empty]										   <
+==== done printing tree ====									   <
+Size is: 7											   <
+==== printing tree ====										   <
    [empty]												   [empty]
-==== done printing tree ====										==== done printing tree ====
-Size is: 0												Size is: 0
-key not found               [empty]									key not found               [empty]
-             [v]=53											             [v]=53
-               [empty]											               [empty]
-           [u]=263											           [u]=263
-               [empty]											               [empty]
-             [t]=253											             [t]=253
-               [empty]											               [empty]
-         [s]=261											         [s]=261
-           [empty]											           [empty]
-       [r]=194												       [r]=194
-             [empty]											             [empty]
-           [q]=45											           [q]=45
-             [empty]											             [empty]
-         [p]=78												         [p]=78
-           [empty]											           [empty]
-     [o]=96												     [o]=96
-             [empty]											             [empty]
-           [n]=187											           [n]=187
-             [empty]											             [empty]
-         [m]=134											         [m]=134
-               [empty]											               [empty]
-             [l]=157											             [l]=157
-               [empty]											               [empty]
-           [i]=343											           [i]=343
-                 [empty]										                 [empty]
-               [h]=18											               [h]=18
-                 [empty]										                 [empty]
-             [g]=60											             [g]=60
-                 [empty]										                 [empty]
-               [f]=28											               [f]=28
-                 [empty]										                 [empty]
-       [e]=369												       [e]=369
-           [empty]											           [empty]
-         [d]=99												         [d]=99
-               [empty]											               [empty]
-             [c]=131											             [c]=131
-                 [empty]										                 [empty]
-               [b]=25											               [b]=25
-                 [empty]										                 [empty]
-           [a]=258											           [a]=258
-                 [empty]										                 [empty]
-               [V]=5											               [V]=5
-                     [empty]										                     [empty]
-                   [U]=4										                   [U]=4
-                     [empty]										                     [empty]
-                 [T]=3											                 [T]=3
-                   [empty]										                   [empty]
-             [S]=7											             [S]=7
-                     [empty]										                     [empty]
-                   [Q]=5										                   [Q]=5
-                     [empty]										                     [empty]
-                 [P]=2											                 [P]=2
-                   [empty]										                   [empty]
-               [N]=3											               [N]=3
-                   [empty]										                   [empty]
-                 [M]=7											                 [M]=7
-                   [empty]										                   [empty]
-   [L]=3												   [L]=3
-               [empty]											               [empty]
-             [I]=6											             [I]=6
-                 [empty]										                 [empty]
-               [G]=1											               [G]=1
-                   [empty]										                   [empty]
-                 [F]=3											                 [F]=3
-                   [empty]										                   [empty]
-           [E]=11											           [E]=11
-                   [empty]										                   [empty]
-                 [D]=1											                 [D]=1
-                   [empty]										                   [empty]
-               [C]=3											               [C]=3
-                   [empty]										                   [empty]
-                 [B]=1											                 [B]=1
-                   [empty]										                   [empty]
-             [A]=7											             [A]=7
-               [empty]											               [empty]
-         [.]=72												         [.]=72
-           [empty]											           [empty]
-       [,]=2												       [,]=2
-         [empty]											         [empty]
-     [ ]=542												     [ ]=542
-       [empty]												       [empty]
+==== done printing tree ====									   <
+Size is: 0											   <
+key not found               [empty]								   <
+             [v]=53										   <
+               [empty]										   <
+           [u]=263										   <
+               [empty]										   <
+             [t]=253										   <
+               [empty]										   <
+         [s]=261										   <
+           [empty]										   <
+       [r]=194											   <
+             [empty]										   <
+           [q]=45										   <
+             [empty]										   <
+         [p]=78											   <
+           [empty]										   <
+     [o]=96											   <
+             [empty]										   <
+           [n]=187										   <
+             [empty]										   <
+         [m]=134										   <
+               [empty]										   <
+             [l]=157										   <
+               [empty]										   <
+           [i]=343										   <
+                 [empty]									   <
+               [h]=18										   <
+                 [empty]									   <
+             [g]=60										   <
+                 [empty]									   <
+               [f]=28										   <
+                 [empty]									   <
+       [e]=369											   <
+           [empty]										   <
+         [d]=99											   <
+               [empty]										   <
+             [c]=131										   <
+                 [empty]									   <
+               [b]=25										   <
+                 [empty]									   <
+           [a]=258										   <
+                 [empty]									   <
+               [V]=5										   <
+                     [empty]									   <
+                   [U]=4									   <
+                     [empty]									   <
+                 [T]=3										   <
+                   [empty]									   <
+             [S]=7										   <
+                     [empty]									   <
+                   [Q]=5									   <
+                     [empty]									   <
+                 [P]=2										   <
+                   [empty]									   <
+               [N]=3										   <
+                   [empty]									   <
+                 [M]=7										   <
+                   [empty]									   <
+   [L]=3											   <
+               [empty]										   <
+             [I]=6										   <
+                 [empty]									   <
+               [G]=1										   <
+                   [empty]									   <
+                 [F]=3										   <
+                   [empty]									   <
+           [E]=11										   <
+                   [empty]									   <
+                 [D]=1										   <
+                   [empty]									   <
+               [C]=3										   <
+                   [empty]									   <
+                 [B]=1										   <
+                   [empty]									   <
+             [A]=7										   <
+               [empty]										   <
+         [.]=72											   <
+           [empty]										   <
+       [,]=2											   <
+         [empty]										   <
+     [ ]=542											   <
+       [empty]											   <
