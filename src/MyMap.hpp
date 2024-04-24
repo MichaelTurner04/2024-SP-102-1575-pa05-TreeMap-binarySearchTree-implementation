@@ -1,33 +1,123 @@
 
 
 template <typename K, typename V>
-void MyMap<K, V>::clear_helper(TreeNode<K, V> *&rt) {}
+void MyMap<K, V>::clear_helper(TreeNode<K, V> *&rt) {
+  if (rt == nullptr)
+    return;
+
+  clear_helper(rt->right);
+  clear_helper(rt->left);
+  delete rt;
+  rt = nullptr;
+}
 
 template <typename K, typename V>
 void MyMap<K, V>::insert_helper(TreeNode<K, V> *&rt, const K &new_key,
-                                const V &new_value) {}
+                                const V &new_value) {
+  if (rt == nullptr) {
+    rt = new TreeNode<K, V>(new_key, new_value);
+    return;
+  }
+  if (new_key == rt->key)
+    return;
+  if (rt == nullptr)
+    rt = new TreeNode<K, V>(new_key, new_value);
+  else {
+    if (new_key < rt->key)
+      insert_helper(rt->left, new_key, new_value);
+    else if (new_key > rt->key)
+      insert_helper(rt->right, new_key, new_value);
+  }
+}
 
 template <typename K, typename V>
-TreeNode<K, V> *MyMap<K, V>::get_min(TreeNode<K, V> *rt) {}
+TreeNode<K, V> *MyMap<K, V>::get_min(TreeNode<K, V> *rt) {
+  if (rt->left == nullptr)
+    return rt;
+  return get_min(rt->right);
+}
 
 template <typename K, typename V>
-void MyMap<K, V>::erase_helper(TreeNode<K, V> *&rt, const K &erase_key) {}
+void MyMap<K, V>::erase_helper(TreeNode<K, V> *&rt, const K &erase_key) {
+  if (rt == nullptr)
+    return;
+  if (erase_key < rt->key)
+    erase_helper(rt->left, erase_key);
+  else if (erase_key > rt->key)
+    erase_helper(rt->right, erase_key);
+  else {
+    if (rt->left == nullptr && rt->right == nullptr) {
+      delete rt;
+      rt = nullptr;
+    } else if (rt->left == nullptr) {
+      TreeNode<K, V> *child = rt->right;
+      delete rt;
+      rt = child;
+    } else if (rt->right == nullptr) {
+      TreeNode<K, V> *child = rt->left;
+      delete rt;
+      rt = child;
+    } else {
+      TreeNode<K, V> *successor = get_min(root->right);
+      rt->key = successor->key;
+      rt->value = successor->value;
+
+      erase_helper(rt->right, successor->key);
+    }
+  }
+}
 
 template <typename K, typename V>
-V &MyMap<K, V>::bracket_helper(TreeNode<K, V> *&rt, const K &access_key) {}
+V &MyMap<K, V>::bracket_helper(TreeNode<K, V> *&rt, const K &access_key) {
+  if (rt == nullptr) {
+    rt = new TreeNode<K, V>(access_key, V());
+    return rt->value;
+  }
+  if (access_key == rt->key) {
+    return rt->value;
+  }
+  if (access_key < rt->key) {
+    return bracket_helper(rt->left, access_key);
+  } else {
+    return bracket_helper(rt->right, access_key);
+  }
+}
 
 template <typename K, typename V>
 TreeNode<K, V> *MyMap<K, V>::find_helper(TreeNode<K, V> *rt,
-                                         const K &search_key) const {}
+                                         const K &search_key) const {
+  if (rt == nullptr)
+    return nullptr;
+  if (search_key == rt->key)
+    return rt;
+
+  if (search_key < rt->key)
+    return find_helper(rt->left, search_key);
+
+  return find_helper(rt->right, search_key);
+}
 
 template <typename K, typename V>
-TreeNode<K, V> *MyMap<K, V>::clone(const TreeNode<K, V> *rt) {}
+TreeNode<K, V> *MyMap<K, V>::clone(const TreeNode<K, V> *rt) {
+  if (rt == nullptr)
+    return nullptr;
+  else
+    return new TreeNode<K, V>(rt->key, rt->value, clone(rt->left),
+                              clone(rt->right));
+}
 
 template <typename K, typename V>
-MyMap<K, V>::MyMap(const MyMap<K, V> &source) {}
+MyMap<K, V>::MyMap(const MyMap<K, V> &source) {
+  root = nullptr;
+  *this = source;
+}
 
 template <typename K, typename V>
-MyMap<K, V> &MyMap<K, V>::operator=(const MyMap<K, V> &source) {}
+MyMap<K, V> &MyMap<K, V>::operator=(const MyMap<K, V> &source) {
+  clear_helper(root);
+  root = clone(source.root);
+  return *this;
+}
 
 /// Do not touch below ///
 

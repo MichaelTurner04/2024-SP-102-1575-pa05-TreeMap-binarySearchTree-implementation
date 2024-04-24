@@ -1,28 +1,4 @@
-34 y												   <
-1												   <
-==== printing tree ====										   <
-       [empty]											   <
-     [154]=p											   <
-           [empty]										   <
-         [84]=x											   <
-           [empty]										   <
-       [73]=w											   <
-         [empty]										   <
-   [54]=x											   <
-       [empty]											   <
-     [36]=x											   <
-           [empty]										   <
-         [32]=x											   <
-           [empty]										   <
-       [5]=a											   <
-         [empty]										   <
-==== done printing tree ====									   <
-Size is: 7											   <
-==== printing tree ====										   <
-   [empty]												   [empty]
-==== done printing tree ====									   <
-Size is: 0											   <
-key not found               [empty]								   <
+               [empty]										   |	   [empty]
              [v]=53										   <
                [empty]										   <
            [u]=263										   <
