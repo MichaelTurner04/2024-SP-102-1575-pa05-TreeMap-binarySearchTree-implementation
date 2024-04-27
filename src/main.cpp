@@ -16,4 +16,11 @@ int main() {
   return 0;
 }
 
-void get_char_frequency(MyMap<char, int> &in_tree) {}
+void get_char_frequency(MyMap<char, int> &in_tree) {
+  char ch;
+  while (cin.get(ch)) {
+    if (ch != '\n') {
+      in_tree[ch]++;
+    }
+  }
+}
